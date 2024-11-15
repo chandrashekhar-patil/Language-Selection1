@@ -9,7 +9,6 @@ function getHelloWorldMessage() {
         return;
     }
 
-    // Updated to use the deployed backend URL
     fetch(`https://language-section-3.onrender.com/hello?language=${language}`)
         .then(response => {
             if (!response.ok) {
